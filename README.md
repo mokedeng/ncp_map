@@ -1,6 +1,10 @@
 # ncp_map
 
 ## 《Vue实战开发百度实时大数据疫情地图》
+
+效果图如下：
+![](https://timegods.oss-cn-shenzhen.aliyuncs.com/markdown/yqmap.jpg)
+
 用vue的脚手架搭建框架
 ```
 vue create ncp_map
