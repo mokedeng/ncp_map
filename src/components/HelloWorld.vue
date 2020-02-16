@@ -81,7 +81,7 @@ export default {
               name: item.name,
               value: item.value
             }));
-            option.title.text = time + "，全国疫情地图";
+            option.title.text = time + "，全国疫情分布图";
             option.series[0].data = list;
             this.myChart.setOption(option);
           }
