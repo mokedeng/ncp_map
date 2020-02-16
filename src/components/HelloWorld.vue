@@ -11,7 +11,8 @@ import jsonp from "jsonp";
 
 const option = {
   title: {
-    text: "疫情地图"
+    text: "",
+    subtext: "数据来源于新浪网"
   },
   tooltip: {
     trigger: "item",
@@ -75,11 +76,12 @@ export default {
         {},
         (err, data) => {
           if (!err) {
-            // console.log(data)
+            let time = data.data.times;
             let list = data.data.list.map(item => ({
               name: item.name,
               value: item.value
             }));
+            option.title.text = time + "，全国疫情地图";
             option.series[0].data = list;
             this.myChart.setOption(option);
           }

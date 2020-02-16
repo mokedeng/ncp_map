@@ -15,7 +15,7 @@ vue create ncp_map
 npm install axios jsonp
 ```
 
-疫情数据来源于新浪的接口，是jsonp接口，不是axios。接口地址：
+疫情数据来源于新浪的接口，是jsonp接口，不是axios。接口地址
 ```
 https://interface.sina.cn/news/wap/fymap2020_data.d.json?_=1580892522427
 ```
